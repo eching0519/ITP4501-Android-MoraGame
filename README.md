@@ -33,14 +33,14 @@ You can find your opponent from the server by using following url:
 https://4qm49vppc3.execute-api.us-east-1.amazonaws.com/Prod/itp4501_api/opponent/0
  and the data returned is in JSON format.
 The sample JSON string returned is shown below:
-
+***`{"id": 2, "name": "May", "country": "UK"}`
 Be careful the last digit 0 on the url is going to find an online opponent from the server. 
 The attribute "id" is the userid of corresponding opponent.
 You can get the choice and hands from that user (here is May with id 2) by using following url:
 https://4qm49vppc3.execute-api.us-east-1.amazonaws.com/Prod/itp4501_api/opponent/2
 The last digit 2 is the id of May.
 The sample JSON string returned is shown below:
-`<addr>`{"id": 2, "name": "May", "country": "UK"}`</addr>`
+***`{"name": "May", "left": 5, "right": 5, "guess": 15}`
 
 For the turn which the number is not guessed by opponent, you can ignore the value in the attribute "guess".
 
