@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameStatisticActivity"
+    android:background="@drawable/wallpaper_light"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pieChart_guessC"
+        android:layout_weight="1"></com.github.mikephil.charting.charts.PieChart>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pieChart_guessP"
+        android:visibility="gone"
+        android:layout_weight="1"></com.github.mikephil.charting.charts.PieChart>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pieChart_handC"
+        android:visibility="gone"
+        android:layout_weight="1"></com.github.mikephil.charting.charts.PieChart>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pieChart_handP"
+        android:visibility="gone"
+        android:layout_weight="1"></com.github.mikephil.charting.charts.PieChart>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOpponentGuess"
+            android:layout_weight="1"
+            android:text="Opponent Guess"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlayerGuess"
+            android:layout_weight="1"
+            android:text="Player Guess"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOpponentHand"
+            android:layout_weight="1"
+            android:text="Opponent Hand"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlayerHand"
+            android:layout_weight="1"
+            android:text="Player Hand"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRestart"
+            android:text="@string/restart"
+            android:layout_weight="2"
+            android:onClick="btnOnClick"/>
+
+        <Button
+            android:id="@+id/btnBarChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnOnClick"
+            android:text="@string/barChart" />
+
+        <Button
+            android:id="@+id/btnQuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnOnClick"
+            android:text="@string/quit" />
+
+    </LinearLayout>
+
+</LinearLayout>

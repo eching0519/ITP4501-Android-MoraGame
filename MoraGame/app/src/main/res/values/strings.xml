@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MoraGame</string>
+    <string name="game_name">15 20 Morra Game</string>
+    <string name="name">Name</string>
+    <string name="dob">Date of birth</string>
+    <string name="phone">Phone number</string>
+    <string name="email">E-mail</string>
+    <string name="register">Register</string>
+    <string name="removeInfo">Remove the saved Information</string>
+    <string name="registeredInfo">Registered Information</string>
+    <string name="startGame">Start A New Game</string>
+    <string name="history">Game History</string>
+    <string name="clearHistory">Clear All History</string>
+    <string name="start">Start</string>
+    <string name="go">Go!</string>
+    <string name="quit">Quit</string>
+    <string name="statistic">Statistic</string>
+    <string name="restart">Restart</string>
+    <string name="barChart">Overall Result (Bar Chart)</string>
+    <string name="playerTurn">Your Turn</string>
+    <string name="opponentTurn">Opponent Turn</string>
+</resources>

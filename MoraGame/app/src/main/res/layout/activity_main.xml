@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/wallpaper_light"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMessage"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegInfo"
+        android:text="@string/registeredInfo"
+        android:layout_marginHorizontal="20dp"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStartGame"
+        android:text="@string/startGame"
+        android:layout_marginHorizontal="20dp"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHistory"
+        android:text="@string/history"
+        android:layout_marginHorizontal="20dp"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClearHistory"
+        android:text="@string/clearHistory"
+        android:layout_marginHorizontal="20dp"
+        android:onClick="onClick" />
+
+</LinearLayout>
