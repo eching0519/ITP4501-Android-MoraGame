@@ -40,6 +40,7 @@ You can get the choice and hands from that user (here is May with id 2) by using
 https://4qm49vppc3.execute-api.us-east-1.amazonaws.com/Prod/itp4501_api/opponent/2
 The last digit 2 is the id of May.
 The sample JSON string returned is shown below:
+`<addr>`{"id": 2, "name": "May", "country": "UK"}`</addr>`
 
 For the turn which the number is not guessed by opponent, you can ignore the value in the attribute "guess".
 
