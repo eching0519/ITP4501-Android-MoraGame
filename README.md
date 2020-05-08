@@ -10,6 +10,7 @@ In this assignment, you are required to develop an Android Application to play a
 https://zh.wikipedia.org/wiki/%E6%95%B8%E5%AD%97%E6%8B%B3<br />
 https://www.youtube.com/watch?v=IrYzM-NCIEs<br />
 <br />
+
 ## 3	Functional Requirements
 Listed below are the basic requirements of your application. You need to refer to the Local Database section for the database schema.
 1.	An activity performs a player’s personal information registration screen which can store player’s name, date of birth, phone number and email by using shared preferences in your phone. You should let player to update his personal information in your app.
@@ -24,10 +25,12 @@ An activity for GamesLog properly show the data stored in the local database. Yo
 <br />
 Note: You are encouraged to design and implement extra features. 15% of the total mark will be allocated on such additional functions. Refer to section 7 Marking Guidelines for more details.<br />
 <br />
+
 ## 4	Local Database
 The database scheme described here is an extremely simple one. Many fields are intended not to be included in order to reduce the complexity of this assignment. You are free to add columns and tables to the database to fit for your own needs. <br />
 GamesLog (gameDate, gameTime, opponentName, winOrLost)<br />
 <br />
+
 ## 5	Opponents JSON Server
 You can find your opponent from the server by using following url:<br />
 https://4qm49vppc3.execute-api.us-east-1.amazonaws.com/Prod/itp4501_api/opponent/0<br />
@@ -44,10 +47,12 @@ The sample JSON string returned is shown below:<br />
 <br />
 For the turn which the number is not guessed by opponent, you can ignore the value in the attribute "guess".<br />
 <br />
+
 ## 6	Additional Constraints
 * The UI of the mobile application must be produced with Android widgets such as TextView, CheckBox, and Spinner etc.  Web-based UI is NOT allowed.
 * The statistical charts must be produced using Android built-in graphics API such as drawRect() and drawText(). Using any other external drawing packages or libraries is NOT allowed. 
 <br />
+
 ## 7	Marking Guidelines
 You project will be assessed according to the items below. 
 * Database initialisation
